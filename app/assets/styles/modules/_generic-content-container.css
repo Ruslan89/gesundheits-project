@@ -1,16 +1,17 @@
 .generic-content-container {
 
 p {
-	line-height: 1.65;		/*Zeilenabstand von Paragraphen im Text*/	
-	margin:1.8rem;			/*Abstand zwischen Abschnitten*/
+	font-weight: 300;
+	line-height: 1.65;				/*Zeilenabstand von Paragraphen im Text*/	
+	margin: 0 0 1.8rem 0;			/*Abstand zwischen Abschnitten. Nur Bottom margin0(top) 0(right) 1.8(bottom) 0(left)*/
 
 	@mixin atSmall {
 		font-size: 1.125rem;
 	}
 }
 
-p a {						/*Alle Links im Paragraphen*/
-	font-weight: 700;		/*Standart: 400*/
+p a {								/*Alle Links im Paragraphen*/
+	font-weight: 700;				/*Standart: 400*/
 }
 
 }
