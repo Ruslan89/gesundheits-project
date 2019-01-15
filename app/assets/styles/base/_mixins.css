@@ -15,3 +15,12 @@
 		@mixin-content;
 	}
 }
+
+@define-mixin clearfix {  				/*Column float*/
+
+		&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
