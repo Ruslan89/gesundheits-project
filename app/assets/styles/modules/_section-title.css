@@ -1,32 +1,34 @@
 .section-title {
-	font-size: 2.55rem;
-	font-weight: 300;
-	text-align: center;
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
 
-	@mixin atSmall {
-		font-size: 3.75rem;
-	}
+  @mixin atSmall {
+    font-size: 3.75rem;
+  }
 
-		strong {
-			font-weight: 500;
-		}
+  strong {
+    font-weight: 500;
+  }
 
-	&__icon {
-		
-		display: block;						/*Icon+Text als Block, aber unter einander*/
-		margin-left: auto;					/*Abstand links und rechts gleich, also zentriert*/
-		margin-right: auto;
-		margin-bottom: 0.6rem;
+  &--blue {
+    color: $mainBlue;
+  }
 
-		@mixin atSmall {
-			margin-right: .5rem;			/*Abstand zum Text*/
-			margin-left: 0;					/*Icon auf der linken Seite*/
-			margin-bottom: -10px;
-			display: inline-block;  		/*Icon+Text in einem Block auf einer Linie*/
-		}
-	}
+  &__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .6rem;
 
-	&--blue {
-		color: $mainBlue;
-	}
+    @mixin atSmall {
+      position: relative;
+      top: 8px;
+      margin-right: .5rem;
+      margin-left: 0;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+  }
+
 }

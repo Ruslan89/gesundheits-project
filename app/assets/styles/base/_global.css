@@ -9,9 +9,9 @@ img {
 }
 
 * {
-	box-sizing: border-box;		/*For Padding. Sonst 100%+65px=geht nicht*/
+  box-sizing: border-box;
 }
 
 a {
-	color: $mainOrange; 
+  color: $mainOrange;
 }
