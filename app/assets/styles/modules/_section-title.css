@@ -25,4 +25,8 @@
 			display: inline-block;  		/*Icon+Text in einem Block auf einer Linie*/
 		}
 	}
+
+	&--blue {
+		color: $mainBlue;
+	}
 }
