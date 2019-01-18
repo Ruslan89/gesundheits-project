@@ -1,11 +1,13 @@
 .primary-nav {
-    padding-top: 10px;
+  padding-top: 10px;
+
+  @mixin atMedium {
+    padding-top: 0;
+  }
 
   &--pull-right {
-
     @mixin atMedium {
       float: right;
-      padding-top: 0;
     }
   }
 
@@ -16,14 +18,13 @@
   }
 
   li {
-    list-style: none;    
-    padding-right: 12px;
+    list-style: none;
     display: inline-block;
-
+    padding-right: 7px;
     @mixin atMedium {
+      padding-right: 20px;
       float: left;
       display: block;
-      padding-right: 20px;
     }
   }
 
