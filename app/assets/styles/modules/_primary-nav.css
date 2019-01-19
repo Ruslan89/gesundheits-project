@@ -50,7 +50,7 @@
       background-color: transparent;
 
       &.is-current-link {
-        color: #fabb69; 
+        color: #fabb69;
       }
     }
   }

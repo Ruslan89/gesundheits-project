@@ -14,7 +14,7 @@ class StickyHeader {
   }
 
   addSmoothScrolling() {
-    this.headerLinks.smoothScroll({speed:500}); 
+    this.headerLinks.smoothScroll({speed:500});
   }
 
   createHeaderWaypoint() {
@@ -39,11 +39,11 @@ class StickyHeader {
       new Waypoint({
         element: currentPageSection,
         handler: function(direction) {
-          if(direction == "down") {
+          if (direction == "down") {
             var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
             that.headerLinks.removeClass("is-current-link");
             $(matchingHeaderLink).addClass("is-current-link");
-          }          
+          }
         },
         offset: "18%"
       });
@@ -51,13 +51,13 @@ class StickyHeader {
       new Waypoint({
         element: currentPageSection,
         handler: function(direction) {
-          if(direction == "up") {
+          if (direction == "up") {
             var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
             that.headerLinks.removeClass("is-current-link");
             $(matchingHeaderLink).addClass("is-current-link");
-          }          
+          }
         },
-        offset: "-40%" 
+        offset: "-40%"
       });
     });
   }
