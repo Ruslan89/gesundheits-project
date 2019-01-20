@@ -22,7 +22,7 @@ class StickyHeader {
   }
 
   addSmoothScrolling() {
-    this.headerLinks.smoothScroll();
+    this.headerLinks.smoothScroll({speed:500});
   }
 
   createHeaderWaypoint() {
@@ -35,6 +35,7 @@ class StickyHeader {
         } else {
           that.siteHeader.removeClass("site-header--dark");
         }
+        that.headerLinks.removeClass("is-current-link");
       }
     });
   }

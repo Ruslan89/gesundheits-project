@@ -21,10 +21,10 @@ class RevealOnScroll {
         element: currentItem,
         handler: function() {
           $(currentItem).addClass("reveal-item--is-visible");
-        },
+        }, 
         offset: that.offsetPercentage
-      });
-    });
+      }); 
+    }); 
   }
 }
 

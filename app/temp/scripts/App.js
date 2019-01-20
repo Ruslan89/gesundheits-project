@@ -10820,7 +10820,7 @@
 	  }, {
 	    key: 'addSmoothScrolling',
 	    value: function addSmoothScrolling() {
-	      this.headerLinks.smoothScroll();
+	      this.headerLinks.smoothScroll({ speed: 500 });
 	    }
 	  }, {
 	    key: 'createHeaderWaypoint',
@@ -10834,6 +10834,7 @@
 	          } else {
 	            that.siteHeader.removeClass("site-header--dark");
 	          }
+	          that.headerLinks.removeClass("is-current-link");
 	        }
 	      });
 	    }
