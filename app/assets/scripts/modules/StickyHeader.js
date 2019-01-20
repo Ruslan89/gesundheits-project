@@ -16,13 +16,13 @@ class StickyHeader {
   }
 
   refreshWaypoints() {
-    this.lazyImages.on('load', function() {
+    this.lazyImages.load(function() {
       Waypoint.refreshAll();
     });
   }
 
   addSmoothScrolling() {
-    this.headerLinks.smoothScroll({speed:500});
+    this.headerLinks.smoothScroll();
   }
 
   createHeaderWaypoint() {
@@ -35,7 +35,6 @@ class StickyHeader {
         } else {
           that.siteHeader.removeClass("site-header--dark");
         }
-        that.headerLinks.removeClass("is-current-link");
       }
     });
   }

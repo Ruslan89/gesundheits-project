@@ -10813,14 +10813,14 @@
 	  _createClass(StickyHeader, [{
 	    key: 'refreshWaypoints',
 	    value: function refreshWaypoints() {
-	      this.lazyImages.on('load', function () {
+	      this.lazyImages.load(function () {
 	        Waypoint.refreshAll();
 	      });
 	    }
 	  }, {
 	    key: 'addSmoothScrolling',
 	    value: function addSmoothScrolling() {
-	      this.headerLinks.smoothScroll({ speed: 500 });
+	      this.headerLinks.smoothScroll();
 	    }
 	  }, {
 	    key: 'createHeaderWaypoint',
@@ -10834,7 +10834,6 @@
 	          } else {
 	            that.siteHeader.removeClass("site-header--dark");
 	          }
-	          that.headerLinks.removeClass("is-current-link");
 	        }
 	      });
 	    }
